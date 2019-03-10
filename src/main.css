@@ -1,0 +1,187 @@
+
+body {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card{
+    background: #242c38;
+    -webkit-box-shadow: 0px 0px 10px #212833;
+    box-shadow: 1px 1px 10px #1a212c;
+    border: 0 solid white;
+    margin-bottom: 10px !important;
+    min-height: 204px;
+    overflow:hidden;
+    border-radius: 5px;
+}
+
+.slide-fade-enter-active {
+    transition: all 1s ease;
+}
+.slide-fade-leave-active {
+    transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateY(25px);
+    opacity: 0;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.card-img-top {
+    max-height: 300px !important;
+}
+
+:global .btn:focus{
+    outline: none !important;
+    box-shadow: 0 0 0 white !important;
+}
+
+.text_white {
+    color: white !important;
+}
+
+
+.mbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 12px 5px;
+}
+
+
+.mbtn-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.mbtn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mbtn-group>.mbtn-group:not(:first-child)>.mbtn,
+.mbtn-group>.mbtn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.mbtn-group>.mbtn {
+    margin: 3px 0;
+}
+
+.mbtn-group>.mbtn-group:not(:last-child)>.btn,
+.mbtn-group>.mbtn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.mbtn {
+    background: transparent;
+    color: #ababab;
+    margin: 3px;
+    padding: 6px 12px;
+    font-size: 15px;
+    border-radius: 1px;
+    border: 1px solid transparent;
+    text-decoration: none!important;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: 0 0 0px #e5e5e5;
+    transition: color .25s ease-in-out,
+    background-color .25s ease-in-out,
+    border-color .25s ease-in-out,
+    box-shadow .25s ease-in-out;
+}
+
+.mbtn.radius {
+    border-radius: 4px;
+}
+.mbtn.round {
+    border-radius: 15px;
+}
+.mbtn.flat {
+    margin:0;
+    border-radius: 0;
+    box-shadow: 0 0 0 white;
+}
+.mbtn.mbtn-dark {
+    background: transparent;
+    color: white;
+}
+.mbtn.mbtn-dark:hover {
+    background: #283242;
+    color: white;
+}
+.mbtn.mbtn-dark.active {
+    background: #283242;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 2px white;
+}
+.mbtn.mbtn-dark.active_white {
+    background: white;
+    color: #283242;
+    font-weight: bold;
+}
+.mbtn.mbtn-red {
+    background: #ff3934;
+    color: white;
+    box-shadow: 0 0 1px #ff6962;
+}
+.mbtn.mbtn-red:hover {
+    background: #ff0300;
+}
+.mbtn.mbtn-red.active {
+    background: #ff0300;
+}
+.mbtn.mbtn-light {
+    background: #f8f9fa;
+    color: #3e3e3e;
+    box-shadow: 0 0 1px #dae0e5;
+}
+.mbtn.mbtn-light:hover {
+    background: #dae0e5;
+}
+.mbtn.mbtn-light.active {
+    background: #dae0e5;
+}
+
+.micon {
+    color:white;
+    cursor: pointer;
+    float: left;
+    margin:0 10px;
+}
+
